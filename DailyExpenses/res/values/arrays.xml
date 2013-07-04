@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="expenses_array">
+        <item>Makan</item>
+        <item>Bensin</item>
+        <item>Pulsa</item>
+        <item>etc</item>
+    </string-array>
+</resources>

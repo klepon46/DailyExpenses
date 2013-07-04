@@ -4,5 +4,7 @@
     <string name="app_name">Daily Expenses</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="ket">Keterangan Pengeluaran</string>
+    <string name="simpan">Simpan</string>
 
 </resources>
