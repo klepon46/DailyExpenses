@@ -6,5 +6,5 @@
     <string name="hello_world">Hello world!</string>
     <string name="ket">Keterangan Pengeluaran</string>
     <string name="simpan">Simpan</string>
-
+<string name="reset">Reset</string>
 </resources>

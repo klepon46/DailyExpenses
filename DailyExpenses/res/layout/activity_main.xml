@@ -38,6 +38,14 @@
 		    android:layout_marginTop="5dp"
 		    android:text="@string/simpan"
 		    />
+		<Button 
+		    android:includeFontPadding="@+id/btn_reset"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dp"
+		    android:text="@string/reset"
+		    />
+		
     </LinearLayout>
     
     

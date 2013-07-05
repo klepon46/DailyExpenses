@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 	private Button btnSimpan;
+	private Button btnReset;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends Activity {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
 		btnSimpan = (Button) findViewById(R.id.btn_simpan);
+		btnReset = (Button) findViewById(R.id.btn_reset);
 			
 	}
 
