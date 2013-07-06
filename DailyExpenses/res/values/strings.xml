@@ -8,5 +8,6 @@
     <string name="ket">Keterangan Pengeluaran :</string>
     <string name="simpan">Simpan</string>
     <string name="reset">Reset</string>
+    <string name="menuBtnReport">Check Expenses</string>
 
 </resources>
