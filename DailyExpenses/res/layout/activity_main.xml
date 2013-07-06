@@ -8,46 +8,58 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-    
-    <LinearLayout 
+
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        
-        <Spinner 
+        android:orientation="vertical" >
+
+        <Spinner
             android:id="@+id/exp_spinner"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"/>
-        
-		<TextView 
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
-		    android:text="@string/ket"/>
-        
-		<EditText 
-		    android:layout_width="fill_parent"
-		    android:layout_height="100dp"
-		    android:inputType="textCapSentences"
-		    android:layout_gravity="bottom"
-		    android:scrollbars="vertical"/>
-		
-		<Button 
-		    android:includeFontPadding="@+id/btn_simpan"
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
-		    android:layout_marginTop="5dp"
-		    android:text="@string/simpan"
-		    />
-		<Button 
-		    android:includeFontPadding="@+id/btn_reset"
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
-		    android:layout_marginTop="5dp"
-		    android:text="@string/reset"
-		    />
-		
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/price" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ket" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:singleLine="false"
+            android:layout_gravity="bottom"
+            android:inputType="textMultiLine|textCapSentences"
+            android:scrollHorizontally="false"
+            android:lines="20"
+            android:minLines="5"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:includeFontPadding="@+id/btn_simpan"
+            android:text="@string/simpan" 
+            android:background="@drawable/custom_button"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:includeFontPadding="@+id/btn_reset"
+            android:text="@string/reset" 
+            android:background="@drawable/custom_button"/>
     </LinearLayout>
-    
-    
 
 </ScrollView>
