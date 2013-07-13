@@ -1,18 +1,21 @@
 package com.pas.main;
 
-import android.os.Bundle;
-import android.app.Activity;
+import java.util.List;
+
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-public class MainActivity extends Activity {
+import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
+import com.j256.ormlite.dao.RuntimeExceptionDao;
+import com.pas.bean.Expenses;
+import com.pas.databases.DatabaseHelper;
+
+public class MainActivity extends OrmLiteBaseActivity<DatabaseHelper> {
 
 	private Button btnSimpan;
 	private Button btnReset;
@@ -49,5 +52,11 @@ public class MainActivity extends Activity {
 			break;
 		}
 		return super.onMenuItemSelected(featureId, item);
+	}
+	
+	public void testDatabaseStuff(){
+		RuntimeExceptionDao<Expenses, Integer> expensesDao = getHelper().getExpensesDao();
+		List<Expenses> expList = expensesDao.queryForAll();
+		System.out.println(expList.size());
 	}
 }
