@@ -66,7 +66,6 @@ public class MainActivity extends OrmLiteBaseActivity<DatabaseHelper> {
 				
 				Expenses exp = new Expenses(expCode, expDesc, new Date(), exptCostInt);
 				expensesDao.create(exp);
-				getHelper().close();
 				
 				Toast.makeText(getApplicationContext(), "Simpan Berhasil", 1).show();
 			}

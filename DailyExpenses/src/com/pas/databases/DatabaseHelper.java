@@ -41,6 +41,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 			throw new RuntimeException(e);
 		}
 		
+		//Coba insert pada saat database pertama kali dibuat
 		RuntimeExceptionDao<Expenses, Integer> expensesDao = getExpensesDao();
 		Expenses expenses = new Expenses("MKN", "Nasi Padang", new Date(), new BigDecimal(12000));
 		getExpensesDao().create(expenses);

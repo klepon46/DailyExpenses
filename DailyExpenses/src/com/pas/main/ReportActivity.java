@@ -23,6 +23,11 @@ public class ReportActivity extends OrmLiteBaseActivity<DatabaseHelper>{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_report);
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
 		populateFields();
 	}
 	
