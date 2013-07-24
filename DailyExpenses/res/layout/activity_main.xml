@@ -25,6 +25,7 @@
             android:text="@string/price" />
 
         <EditText
+            android:id="@+id/edit_cost"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:inputType="number" />
@@ -35,6 +36,7 @@
             android:text="@string/ket" />
 
         <EditText
+            android:id="@+id/edit_desc"
             android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:singleLine="false"
@@ -46,18 +48,18 @@
             android:scrollbars="vertical" />
 
         <Button
+            android:id="@+id/btn_simpan"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:includeFontPadding="@+id/btn_simpan"
             android:text="@string/simpan" 
             android:background="@drawable/custom_button"/>
 
         <Button
+            android:id="@+id/btn_reset"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:includeFontPadding="@+id/btn_reset"
             android:text="@string/reset" 
             android:background="@drawable/custom_button"/>
     </LinearLayout>

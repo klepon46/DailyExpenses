@@ -3,9 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
+     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" 
-        android:text="Report Nanti akan di taruh disini"/>
+        android:layout_height="wrap_content"
+        android:text="TOTAL" 
+        android:background="#dee4fa" />
+    
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#dee4fa"
+        android:gravity="right"    />
+   
 
 </RelativeLayout>
