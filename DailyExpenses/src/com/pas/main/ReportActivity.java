@@ -38,7 +38,7 @@ public class ReportActivity extends OrmLiteBaseActivity<DatabaseHelper>{
 		RuntimeExceptionDao<Expenses, Integer> expensesDao =
 				getHelper().getExpensesDao();
 		GenericRawResults<String[]> rawResults =
-				expensesDao.queryRaw("select sum(expensesAmount) from Expenses");
+				expensesDao.queryRaw("select sum(expensesAmount) from Expenses group by expensesCode");
 		try {
 			List<String[]> results = rawResults.getResults();
 			for(String[] resultArray : results){

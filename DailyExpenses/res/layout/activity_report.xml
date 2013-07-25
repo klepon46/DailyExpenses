@@ -1,20 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
-     <TextView
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="TOTAL" 
-        android:background="#dee4fa" />
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvMakan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#d7e2ea"
+            android:text="Makan :"
+            android:textSize="30sp" />
+        
+         <TextView
+            android:id="@+id/text_makan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMakan"
+            android:background="#d7e2ea"
+            android:gravity="right"
+            android:textSize="25sp" />
+    </RelativeLayout>
     
-    <TextView
-        android:id="@+id/text_total"
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#dee4fa"
-        android:gravity="right"    />
-   
+        android:layout_height="wrap_content" >
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/tvPulsa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#9bcd9b"
+            android:text="Pulsa :"
+            android:textSize="30sp" />
+        
+         <TextView
+            android:id="@+id/text_pulsa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPulsa"
+            android:background="#9bcd9b"
+            android:gravity="right"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvBensin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8dada"
+            android:text="Bensin :"
+            android:textSize="30sp" />
+        
+         <TextView
+            android:id="@+id/text_bensin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBensin"
+            android:background="#f8dada"
+            android:gravity="right"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvEtc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#c4eed4"
+            android:text="Etc :"
+            android:textSize="30sp" />
+        
+         <TextView
+            android:id="@+id/text_etc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEtc"
+            android:background="#c4eed4"
+            android:gravity="right"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#dee4fa"
+            android:text="TOTAL :"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTotal"
+            android:background="#dee4fa"
+            android:gravity="right"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</LinearLayout>
