@@ -3,109 +3,121 @@
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f6e8d2"
     android:orientation="vertical" >
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-
-        <ImageView 
-            android:id="@+id/img_food"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/food"/>
-        
-         <TextView
-            android:id="@+id/text_makan"
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:layout_toRightOf="@id/img_food"
-            android:background="#d7e2ea"
-            android:gravity="right"
-            android:textSize="15sp" />
-    </RelativeLayout>
-    
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-
-        <ImageView 
-            android:id="@+id/img_cellphone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cellphone"/>
-        
-         <TextView
-            android:id="@+id/text_pulsa"
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:layout_toRightOf="@id/img_cellphone"
-            android:background="#9bcd9b"
-            android:gravity="right"
-            android:textSize="25sp" />
-    </RelativeLayout>
-    
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-
-        <ImageView 
-            android:id="@+id/img_gas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/iconfuel"/>
-        
-         <TextView
-            android:id="@+id/text_bensin"
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:layout_toRightOf="@id/img_gas"
-            android:background="#f8dada"
-            android:gravity="right"
-            android:textSize="25sp" />
-    </RelativeLayout>
-    
-     <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-
-       <ImageView 
-            android:id="@+id/img_etc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/wallet"/>
-        
-         <TextView
-            android:id="@+id/text_etc"
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:layout_toRightOf="@id/img_etc"
-            android:background="#c4eed4"
-            android:gravity="right"
-            android:textSize="25sp" />
-    </RelativeLayout>
-    
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border" >
 
         <TextView
             android:id="@+id/tvTotal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="#dee4fa"
-            android:text="TOTAL :"
-            android:textSize="30sp" />
+            android:background="#f6e8d2"
+            android:gravity="center"
+            android:text="TOTAL" />
 
         <TextView
             android:id="@+id/text_total"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_below="@id/tvTotal"
-            android:background="#dee4fa"
-            android:gravity="right"
+            android:background="#f6e8d2"
+            android:gravity="right|bottom"
             android:textSize="25sp" />
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/food" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Harga" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/mobile" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Harga" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/gas" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Harga" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/wallet" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Harga" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
